@@ -1,0 +1,26 @@
+{
+  "name": "coffeescript-html",
+  "displayName": "Coffeescript HTML",
+  "description": "",
+  "version": "0.0.1",
+  "engines": {
+    "vscode": "^1.84.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "contributes": {
+    "grammars": [
+      {
+        "scopeName": "html-string.injection",
+        "path": "./syntaxes/html-string.tmLanguage.json",
+        "injectTo": [
+          "source.coffee"
+        ],
+        "embeddedLanguages": {
+          "meta.embedded.inline.html": "html"
+        }
+      }
+    ]
+  }
+}
